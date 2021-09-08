@@ -2,7 +2,6 @@
 이메일, 닉네임, 비밀번호를 저장
 SNS 로그인을 했을 경우 provider, snsId 저장 */
 const Sequelize = require('sequelize');
-const { underscoredIf } = require('sequelize/types/lib/utils');
 
 module.exports = class User extends Sequelize.Model {
     static init(sequelize){
